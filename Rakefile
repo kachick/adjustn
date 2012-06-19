@@ -9,6 +9,7 @@ $hoe = Hoe.spec 'adjustn' do
   self.rubyforge_name       = name
   require_ruby_version '>= 1.9.3'
   dependency 'yard', '>= 0.8.2.1', :development
+  dependency 'declare', '~> 0.0.3', :development
 end
 
 require 'newgem/tasks'
