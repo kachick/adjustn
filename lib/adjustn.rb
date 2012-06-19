@@ -3,62 +3,23 @@
 
 # Copyright (C) 2012 Kenichi Kamiya
 
+require_relative 'adjustn/newlinechar'
 
 module AdjustN
 
-  VERSION = '0.0.1'.freeze
-
-  module NewlineChar
-  
-    Autonyms = {
-      cr: :cr,
-      lf: :lf,
-      crlf: :crlf,
-      mac: :cr,
-      unix: :lf,
-      win: :crlf,
-      dos: :crlf
-    }.freeze
-
-    LF = "\x0a".freeze
-    CR = "\x0d".freeze
-    CRLF = "\x0d\x0a".freeze
-
-    Pair = Struct.new :before, :after
-    
-    PAIRS = {
-      lf: Pair.new(/#{CRLF}|#{CR}/, LF).freeze,
-      cr: Pair.new(/#{CRLF}|#{LF}/, CR).freeze,
-      crlf: Pair.new(/(?<!#{CRLF})(?:#{LF}|#{CR})/, CRLF).freeze
-    }.freeze
-
-    class << self
-
-      # @return [Symbol] :cr, :lf, :crlf
-      def autonym(str)
-        if /\A(cr|lf|crlf|mac|unix|win|dos)\z/i =~ str
-          Autonyms.fetch str.downcase.to_sym
-        else
-          raise TypeError
-        end
-      end
-    
-    end
-
-  end
+  VERSION = '0.0.2'.freeze
 
   class << self
     
     def run(after_code, *pathnames)
       raise ArgumentError unless pathnames.length >= 1
 
-      want = NewlineChar.autonym(after_code)
-      before, after = *NewlineChar::PAIRS.fetch(want)
+      before, after = *pair_for(after_code)
 
       pathnames.each do |pathname|
         source = File.binread pathname
 
-        if output = source.gsub!(before){after}
+        if output = gsub_for!(source, before, after)
           File.open pathname, 'wb' do |f|
             f << output
           end
@@ -66,6 +27,20 @@ module AdjustN
           $stderr.puts %!Already adjuted the file "#{pathname}"!
         end
       end
+    end
+    
+    private
+  
+    # @return [NewlineChar::Pair]
+    def pair_for(want)
+      want = NewlineChar.autonym(want)
+      NewlineChar::PAIRS.fetch(want)
+    end
+    
+    # @return [String, nil]
+    # @note This method for testing to easily
+    def gsub_for!(source, before, after)
+      source.gsub!(before){after}
     end
 
   end

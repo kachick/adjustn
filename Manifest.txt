@@ -4,4 +4,6 @@ History.rdoc
 Manifest.txt
 Rakefile
 lib/adjustn.rb
+lib/adjustn/newlinechar.rb
 bin/adjustn
+dspec/dspec.rb
