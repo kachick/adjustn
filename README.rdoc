@@ -1,0 +1,40 @@
+= adjustn
+
+code :: https://github.com/kachick/adjustn
+bugs :: https://github.com/kachick/adjustn/issues
+gem  :: https://rubygems.org/gems/adjustn
+
+== Description
+
+A tiny tool for adjusting new line characters(CR LF CRLF).
+
+== Futures
+
+* CR (Mac)
+* LF (Unix)
+* CRLF (Windows)
+* Like unix2dos, dos2unix on Ruby
+
+== Usage
+
+    > adjustn lf pathname1 [pathname2...pathnameN]
+
+== Requirements
+
+* Ruby 1.9.3 or later
+  
+  Focusing
+  
+  * 1.9.3-p194
+
+== Installation
+
+* gem install adjustn
+
+== License
+
+The MIT/X License
+
+Copyright (c) 2012 Kenichi Kamiya
+
+See the file LICENSE for further details.

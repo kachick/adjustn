@@ -1,0 +1,7 @@
+README.rdoc
+LICENSE
+History.rdoc
+Manifest.txt
+Rakefile
+lib/adjustn.rb
+bin/adjustn
