@@ -4,7 +4,7 @@ module AdjustN
 
   module NewlineChar
   
-    Autonyms = {
+    AUTONYMS = {
       cr: :cr,
       lf: :lf,
       crlf: :crlf,
@@ -31,7 +31,7 @@ module AdjustN
       # @return [Symbol] :cr, :lf, :crlf
       def autonym(str)
         if /\A(cr|lf|crlf|mac|unix|win|dos)\z/i =~ str
-          Autonyms.fetch str.downcase.to_sym
+          AUTONYMS.fetch str.downcase.to_sym
         else
           raise TypeError
         end
