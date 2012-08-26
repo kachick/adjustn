@@ -1,9 +1,13 @@
-README.rdoc
+README.md
 LICENSE
-History.rdoc
+History.md
 Manifest.txt
 Rakefile
+Gemfile
+adjustn.gemspec
 lib/adjustn.rb
+lib/adjustn/version.rb
 lib/adjustn/newlinechar.rb
+lib/adjustn/singleton_class.rb
 bin/adjustn
-dspec/dspec.rb
+test/test_lib.rb

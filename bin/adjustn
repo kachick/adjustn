@@ -1,4 +1,4 @@
-#!/usr/local/bin/ruby
+#!/usr/bin/env ruby
 # adjustn
 #   A tiny tool for adjusting new line characters(CR LF CRLF)
 
