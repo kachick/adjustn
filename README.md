@@ -41,7 +41,7 @@ Link
 
 * [code](https://github.com/kachick/adjustn)
 * [issues](https://github.com/kachick/adjustn/issues)
-* [CI](http://travis-ci.org/#!/kachick/adjustn
+* [CI](http://travis-ci.org/#!/kachick/adjustn)
 * [gem](https://rubygems.org/gems/adjustn)
 
 License
