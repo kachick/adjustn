@@ -1,3 +1,4 @@
+# coding: us-ascii
 # adjustn
 #   A tiny tool for adjusting new line characters(CR LF CRLF)
 
