@@ -2,6 +2,6 @@
 
 module AdjustN
 
-  VERSION = '0.0.2.1'.freeze
+  VERSION = '0.0.3'.freeze
 
 end
