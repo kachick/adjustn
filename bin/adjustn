@@ -10,7 +10,7 @@ require_relative '../lib/adjustn'
 $VERBOSE = true
 
 unless ARGV.length >= 2
-  abort "# Usage\n> ruby #{$PROGRAM_NAME} after[cr lf crlf] *pathnames"
+  abort "Usage: #{$PROGRAM_NAME} {cr|lf|crlf} *pathnames"
 end
 
 AdjustN.run ARGV.shift, *ARGV
