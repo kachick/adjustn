@@ -29,6 +29,7 @@ module AdjustN
 
     class << self
 
+      # @param [String] str
       # @return [Symbol] :cr, :lf, :crlf
       def autonym(str)
         if /\A(cr|lf|crlf|mac|unix|win|dos)\z/i =~ str

@@ -4,6 +4,8 @@ module AdjustN
 
   class << self
     
+    # @param [Symbol, String] after_code
+    # @return [void]
     def run(after_code, *pathnames)
       raise ArgumentError unless pathnames.length >= 1
 
@@ -31,7 +33,7 @@ module AdjustN
     end
     
     # @return [String, nil]
-    # @note This method for testing to easily
+    # @note for easy testing
     def gsub_for!(source, before, after)
       source.gsub!(before){after}
     end
