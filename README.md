@@ -53,8 +53,6 @@ Link
 License
 -------
 
-The MIT X License
-
-Copyright (c) 2012 Kenichi Kamiya
-
-See the file LICENSE for further details.
+The MIT X11 License  
+Copyright (c) 2012 Kenichi Kamiya  
+See MIT-LICENSE for further details.
