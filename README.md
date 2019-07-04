@@ -27,7 +27,7 @@ $ adjustn LF path [*path]
 Requirements
 ------------
 
-* [Ruby 1.9.3 or later](http://travis-ci.org/#!/kachick/adjustn)
+* [Ruby 2.5 or later](http://travis-ci.org/#!/kachick/adjustn)
 
 Install
 -------
