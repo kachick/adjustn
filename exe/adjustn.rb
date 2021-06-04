@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # coding: us-ascii
+# frozen_string_literal: true
 # adjustn
 #   A tiny tool for adjusting new line characters(CR LF CRLF)
 
