@@ -1,52 +1,30 @@
-adjustn
-==============
+# adjustn
 
-[![Build Status](https://secure.travis-ci.org/kachick/adjustn.png)](http://travis-ci.org/kachick/adjustn)
+![Build Status](https://github.com/kachick/adjustn/actions/workflows/test_behaviors.yml/badge.svg?branch=main)
 [![Gem Version](https://badge.fury.io/rb/adjustn.png)](http://badge.fury.io/rb/adjustn)
 
-A tiny text tool for adjusting new line characters(CR LF CRLF).  
+A tiny text tool for adjusting new line characters(CR LF CRLF).
 In short, Like unix2dos/dos2unix on Ruby.
-
-Features
---------
 
 * CR (Mac)
 * LF (Unix)
 * CRLF (Windows)
 
+Convertible above
 
-Usage
------
+## Usage
+
+Require Ruby 2.6 or later
 
 ### Overview
 
-```shell
-$ adjustn LF path [*path]
-```
-
-Requirements
-------------
-
-* [Ruby 2.5 or later](http://travis-ci.org/#!/kachick/adjustn)
-
-Install
--------
-
-```shell
+```console
 $ gem install adjustn
+$ adjustn.rb LF path [*path]
+Done!
 ```
 
-Link
-----
+## Links
 
-* [code](https://github.com/kachick/adjustn)
-* [issues](https://github.com/kachick/adjustn/issues)
-* [CI](http://travis-ci.org/#!/kachick/adjustn)
-* [gem](https://rubygems.org/gems/adjustn)
-
-License
--------
-
-The MIT X11 License  
-Copyright (c) 2012 Kenichi Kamiya  
-See MIT-LICENSE for further details.
+* [Repository](https://github.com/kachick/adjustn)
+* [API documents](https://kachick.github.io/adjustn/)

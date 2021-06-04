@@ -7,9 +7,10 @@ require_relative './lib/adjustn/version'
 repository_url = "https://github.com/kachick/#{lib_name}"
 
 Gem::Specification.new do |gem|
-  gem.summary       = %q{Tiny text tool for adjusting new line characters}
+  gem.summary       = %q{Adjusting new line characters}
   gem.description   = <<-'DESCRIPTION'
-    Tiny text tool for adjusting new line characters
+    A tiny text tool for adjusting new line characters(CR LF CRLF).
+    In short, Like unix2dos/dos2unix on Ruby.
   DESCRIPTION
   gem.homepage      = repository_url
   gem.license       = 'MIT'
