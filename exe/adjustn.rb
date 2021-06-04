@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # coding: us-ascii
+# frozen_string_literal: true
 # adjustn
 #   A tiny tool for adjusting new line characters(CR LF CRLF)
 
@@ -7,10 +8,8 @@
 
 require_relative '../lib/adjustn'
 
-$VERBOSE = true
-
 unless ARGV.length >= 2
   abort "Usage: #{$PROGRAM_NAME} {cr|lf|crlf} *pathnames"
 end
 
-AdjustN.run ARGV.shift, *ARGV
+AdjustN.run(ARGV.shift, *ARGV)
