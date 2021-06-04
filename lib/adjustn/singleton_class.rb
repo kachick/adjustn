@@ -18,7 +18,7 @@ module AdjustN
             f << output
           end
         else
-          $stderr.puts %Q!Already adjuted the file "#{pathname}"!
+          $stderr.puts %Q!Already adjusted the file "#{pathname}"!
         end
       end
     end
