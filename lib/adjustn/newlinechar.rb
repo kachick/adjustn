@@ -15,9 +15,9 @@ module AdjustN
       dos: :crlf
     }.freeze
 
-    LF = "\x0a".freeze
-    CR = "\x0d".freeze
-    CRLF = (CR + LF).freeze
+    LF = "\x0a"
+    CR = "\x0d"
+    CRLF = (CR + LF)
 
     Pair = Struct.new(:before, :after)
 
