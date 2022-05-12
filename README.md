@@ -14,7 +14,7 @@ Convertible above
 
 ## Usage
 
-Require Ruby 2.6 or later
+Require Ruby 2.7 or later
 
 ### Overview
 
