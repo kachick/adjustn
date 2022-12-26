@@ -1,7 +1,10 @@
+This repository is archived
+No longer maintained
+All versions have been yanked from https://rubygems.org for releasing valuable namespace for others
+
 # adjustn
 
 ![Build Status](https://github.com/kachick/adjustn/actions/workflows/test_behaviors.yml/badge.svg?branch=main)
-[![Gem Version](https://badge.fury.io/rb/adjustn.png)](http://badge.fury.io/rb/adjustn)
 
 A tiny text tool for adjusting new line characters(CR LF CRLF).
 In short, Like unix2dos/dos2unix on Ruby.
@@ -19,7 +22,6 @@ Require Ruby 2.7 or later
 ### Overview
 
 ```console
-$ gem install adjustn
 $ adjustn.rb LF path [*path]
 Done!
 ```
